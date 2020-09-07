@@ -17,11 +17,13 @@ import java.util.ArrayList;
 
 public class MenuAdapterClass extends ArrayAdapter<String> {
 
+    //Attributes
     private final ArrayList<String> foodNameList;
     private final ArrayList<Integer> priceList;
     private final ArrayList<Bitmap> foodImageList;
     private final Activity context;
 
+    //Constructor
     public MenuAdapterClass(ArrayList<String> foodNameList, ArrayList<Integer> priceList, ArrayList<Bitmap> foodImageList, Activity context) {
         super(context, R.layout.custom_view, foodNameList);
         this.foodNameList = foodNameList;
@@ -30,6 +32,8 @@ public class MenuAdapterClass extends ArrayAdapter<String> {
         this.context = context;
     }
 
+
+    // returns the customView with the added array lists
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
