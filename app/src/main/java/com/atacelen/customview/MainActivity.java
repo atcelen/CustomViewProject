@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         foodImageList.add(BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.sushi));
 
         // See "MenuAdapterClass.java" for details
-        MenuAdapterClass menuAdapterClass = new MenuAdapterClass(foodNameList, priceList, foodImageList, this);
-        listView.setAdapter(menuAdapterClass);
+        MenuAdapterClass menuAdapter = new MenuAdapterClass(foodNameList, priceList, foodImageList, this);
+        listView.setAdapter(menuAdapter);
     }
 }
