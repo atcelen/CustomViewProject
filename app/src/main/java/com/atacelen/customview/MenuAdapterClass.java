@@ -33,7 +33,12 @@ public class MenuAdapterClass extends ArrayAdapter<String> {
     }
 
 
-    // returns the customView with the added array lists
+    /*
+        The "getView" method displays the data at the specified position in the data set.
+        You can either create a View manually or inflate it from an XML layout file.
+
+        https://developer.android.com/reference/android/widget/Adapter
+    */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
